@@ -32,6 +32,10 @@ class ViewController: UIViewController {
         let alert = guessAlert()
         self.present(alert, animated: true)
     }
+    @IBAction func palindromeButtonPressed() {
+        let palindromeVC = PalindromeViewController()
+        show(palindromeVC, sender: nil)
+    }
     
     // MARK: - Help methods
     private func showWelcomeAlert() {

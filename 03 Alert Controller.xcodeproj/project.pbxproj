@@ -13,6 +13,8 @@
 		575C01A12844C884001F2566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575C019F2844C884001F2566 /* Main.storyboard */; };
 		575C01A32844C885001F2566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575C01A22844C885001F2566 /* Assets.xcassets */; };
 		575C01A62844C885001F2566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575C01A42844C885001F2566 /* LaunchScreen.storyboard */; };
+		575C01AF28450870001F2566 /* PalindromeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C01AE28450870001F2566 /* PalindromeViewController.swift */; };
+		575C01B328450AE5001F2566 /* PalindromChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C01B228450AE5001F2566 /* PalindromChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		575C01A22844C885001F2566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		575C01A52844C885001F2566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		575C01A72844C885001F2566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575C01AE28450870001F2566 /* PalindromeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeViewController.swift; sourceTree = "<group>"; };
+		575C01B228450AE5001F2566 /* PalindromChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,31 @@
 			children = (
 				575C01992844C884001F2566 /* AppDelegate.swift */,
 				575C019B2844C884001F2566 /* SceneDelegate.swift */,
-				575C019D2844C884001F2566 /* ViewController.swift */,
+				575C01B128450AC4001F2566 /* Model */,
+				575C01B028450AB9001F2566 /* ViewControllers */,
 				575C019F2844C884001F2566 /* Main.storyboard */,
 				575C01A22844C885001F2566 /* Assets.xcassets */,
 				575C01A42844C885001F2566 /* LaunchScreen.storyboard */,
 				575C01A72844C885001F2566 /* Info.plist */,
 			);
 			path = "03 Alert Controller";
+			sourceTree = "<group>";
+		};
+		575C01B028450AB9001F2566 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				575C019D2844C884001F2566 /* ViewController.swift */,
+				575C01AE28450870001F2566 /* PalindromeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		575C01B128450AC4001F2566 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				575C01B228450AE5001F2566 /* PalindromChecker.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +183,9 @@
 			files = (
 				575C019E2844C884001F2566 /* ViewController.swift in Sources */,
 				575C019A2844C884001F2566 /* AppDelegate.swift in Sources */,
+				575C01B328450AE5001F2566 /* PalindromChecker.swift in Sources */,
 				575C019C2844C884001F2566 /* SceneDelegate.swift in Sources */,
+				575C01AF28450870001F2566 /* PalindromeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -56,6 +56,20 @@
                                     <action selector="addButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFS-zL-pvu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwY-Ga-T88">
+                                <rect key="frame" x="40" y="593" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0xW-wH-SPr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Palindrome checker">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                    <color key="baseBackgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="0.80683464400000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="palindromeButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="01v-KF-oyQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,11 +79,14 @@
                             <constraint firstItem="Ele-Dt-FKR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I0h-d5-Sdv"/>
                             <constraint firstItem="l1S-az-Al4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="MAk-Cd-HdM"/>
                             <constraint firstItem="aOs-b4-60F" firstAttribute="top" secondItem="l1S-az-Al4" secondAttribute="bottom" constant="40" id="MEW-uT-jo1"/>
+                            <constraint firstItem="OwY-Ga-T88" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QDh-KM-pvU"/>
                             <constraint firstItem="l1S-az-Al4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rud-cf-3FH"/>
                             <constraint firstItem="12n-WO-hUm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VX0-j3-ENB"/>
+                            <constraint firstItem="OwY-Ga-T88" firstAttribute="top" secondItem="aOs-b4-60F" secondAttribute="bottom" constant="40" id="cBK-ce-zOo"/>
                             <constraint firstItem="aOs-b4-60F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="nlZ-rg-Gy1"/>
                             <constraint firstItem="l1S-az-Al4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="p4C-LE-TKN"/>
                             <constraint firstItem="Ele-Dt-FKR" firstAttribute="top" secondItem="12n-WO-hUm" secondAttribute="bottom" constant="60" id="qz0-lz-uCm"/>
+                            <constraint firstItem="OwY-Ga-T88" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="yEn-uX-lgJ"/>
                         </constraints>
                     </view>
                     <connections>

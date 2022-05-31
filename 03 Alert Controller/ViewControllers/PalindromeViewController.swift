@@ -22,6 +22,7 @@ class PalindromeViewController: UIViewController {
         textField.delegate = self
     }
     
+    // hide kayboard on touch uotside textField
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
@@ -66,7 +67,7 @@ class PalindromeViewController: UIViewController {
         textField.textAlignment = .center
         textField.attributedPlaceholder = NSAttributedString(
             string: "Radar",
-            attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)]
+            attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)]
         )
         
         // setup button
@@ -103,6 +104,7 @@ class PalindromeViewController: UIViewController {
     }
 }
 
+// hide keyboard when pressing return on keyboard
 extension PalindromeViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
